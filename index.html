@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 		<title>HelloFirefox</title>
+
+		<!-- Building blocks -->
+		<link rel="stylesheet" href="style/action_menu.css">
+		<link rel="stylesheet" href="style/buttons.css">
+		<link rel="stylesheet" href="style/confirm.css">
+		<link rel="stylesheet" href="style/edit_mode.css">
+		<link rel="stylesheet" href="style/headers.css">
+		<link rel="stylesheet" href="style/input_areas.css">
+		<link rel="stylesheet" href="style/status.css">
+		<link rel="stylesheet" href="style/switches.css">
+		<link rel="stylesheet" href="style/drawer.css">
+		<link rel="stylesheet" href="style/lists.css">
+		<link rel="stylesheet" href="style/progress_activity.css">
+		<link rel="stylesheet" href="style/scrolling.css">
+		<link rel="stylesheet" href="style/seekbars.css">
+		<link rel="stylesheet" href="style/tabs.css">
+		<link rel="stylesheet" href="style/toolbars.css">
+
+		<!-- Icons -->
+		<link rel="stylesheet" href="icons/styles/action_icons.css">
+		<link rel="stylesheet" href="icons/styles/media_icons.css">
+		<link rel="stylesheet" href="icons/styles/comms_icons.css">
+		<link rel="stylesheet" href="icons/styles/settings_icons.css">
+
+		<!-- Transitions -->
+		<link rel="stylesheet" href="transitions.css">
+
+		<!-- Util CSS: some extra tricks -->
+		<link rel="stylesheet" href="util.css">
 	</head>
+
+	<style>
+		/* code here */
+    </style>
 
 	<body role="application">
 
-		<section role="region" id="hello-firefox">
-			<header>
+		<section role="region" id="hello-firefox"> <!-- This is the main screen -->
+			<header class="fixed">
+				<a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+				<a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
 				<h1>HelloFirefox</h1>
 			</header>
-			<IMG src="style/icons/hello.png"></IMG>
+			<article>
+				<IMG src="style/icons/hello.png"></IMG>
+			</article>
 		</section>
 
-		<script src="script.js"></script>
-		
+		<script src="js/script.js"></script>
+
 	</body>
 </html>
