@@ -1,0 +1,14 @@
+{
+  "name": "HelloFirefox",
+  "version": "0.1",
+  "description": "A simple Hello World app",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Aronne Brivio",
+    "url": "https://github.com/aroblu94/"
+  },
+  "icons": {
+    "60": "/style/icons/icon_60.png",
+    "128": "/style/icons/icon_128.png"
+  }
+}
