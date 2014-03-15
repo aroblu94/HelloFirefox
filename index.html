@@ -33,6 +33,9 @@
 
 		<!-- Util CSS: some extra tricks -->
 		<link rel="stylesheet" href="util.css">
+
+		<!-- Link to scrips.js
+		<script src="js/script.js"></script> -->
 	</head>
 
 	<style>
@@ -42,42 +45,44 @@
 	<body role="application">
 
 		<section role="region" id="hello-firefox"> <!-- This is the main screen -->
-			<header class="fixed">
-				<a href="#"><span class="icon icon-menu">hide sidebar</span></a>
-				<a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
-				<h1>HelloFirefox</h1>
+			<header>
+				<menu type="toolbar">
+					<a href="#"><span class="icon icon-share">share</span></a>
+				</menu>
+				<h1>Hello, Firefox</h1>
 			</header>
-			<article>
-				<a id="clickMe" href="#">
-					<p>Click Me!</p>
-				</a>
+			<article id="article" data-type="list">
+						<button id="clickMe" href="#img">
+							<p>Click Me!</p>
+						</button>
 			</article>
 		</section>
 
-		<section id="confirm" data-position="back" class="fullscreen"> <!-- Pop-up-dialog-like when pressed "Click me!" button -->
-			<!--<form role="dialog" data-type="confirm">
+		<section id="img" role="region"> <!-- screen with the Hello World image-->
+			<header>
+				<h1>HW image</h1>
+			</header>
+			<article id="article2" data-type="list">
+				<IMG src="style/icons/hello.png"></IMG>
+			</article>
+			<div role="toolbar">
+				<ul>
+					<li>
+						<button id="delete" class="icon-delete">Delete</button>
+					</li>
+				</ul>
+			</div>
+			<form id="go-back-dialog" role="dialog" data-type="confirm" class="hidden">
 				<section>
-					<h1>Confirm</h1>
-					<p>Are you sure you want to proceed?</p>
+					<h1>Confirmation</h1>
+					<p>Are you sure you want to go back?</p>
 				</section>
 				<menu>
-					<button id="cancel">Cancel</button>
-					<button id="proceed" class="danger">Proceed</button>
+					<button id="cancel-go-back">Cancel</button>
+					<button id="confirm-go-back">Go back</button>
 				</menu>
 			</form>
 		</section>
-
-		<section id="img"> <!-- screen with the Hello World image-->
-			<header class="fixed">
-				<a id="btn-buttons-back" href="#"><span class="icon icon-back">back</span></a>
-					<h1>Finally...</h1>
-			</header>
-			<article>
-				<IMG src="style/icons/hello.png"></IMG>
-			</article>
-		</section>
-
-		<script src="js/script.js"></script>
 
 	</body>
 </html>
